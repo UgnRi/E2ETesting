@@ -1,0 +1,18 @@
+{
+    "scenario_name": "basic_ap_setup",
+    "description": "Configure new wireless access point with LAN interface",
+    "config": {
+        "ssid": "TestNetwork",
+        "password": "Test123!@#",
+        "lan_interface": {
+            "name": "customlan",
+            "ip_address": "192.168.2.1",
+            "subnet_mask": "255.255.255.0",
+            "dhcp": {
+                "enabled": true,
+                "start": "192.168.2.100",
+                "end": "192.168.2.200"
+            }
+        }
+    }
+}
