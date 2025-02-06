@@ -1,0 +1,2 @@
+scenario,status,details,timestamp
+basic_ap_setup,FAIL,"Page.screenshot: Target page, context or browser has been closed",2025-02-06 11:37:27

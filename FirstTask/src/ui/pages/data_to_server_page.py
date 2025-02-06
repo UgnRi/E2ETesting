@@ -4,14 +4,17 @@ from src.utils.logger import setup_logger
 logger = setup_logger()
 
 class DTSPage(BasePage):
-    def __init__(self, page):
+    def __init__(self, page, device_config):
         super().__init__(page)
+        self.device_config = device_config
+
         
     async def navigate(self):
         """Navigate to Services → Data to Server """
         try:
-            logger.info("Attempting to navigate to Data to Server page")
-            await self.page.goto('https://192.168.1.1/services/data_sender')
+            url = f'https://{self.device_config["device"]["ip"]}/services/data_sender'
+            logger.info(f"Navigating to {url}")
+            await self.page.goto(url)
             # Wait for multiple possible indicators of page load
             await self.page.wait_for_selector('[test-id="button-add"]', timeout=30000)
             logger.info("Successfully navigated to Data to Server page")

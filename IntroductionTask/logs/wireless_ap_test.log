@@ -21508,3 +21508,15 @@ Call log:
   - navigating to "https://192.168.1.1/login", waiting until "networkidle"
 
 2025-02-06 11:22:36,804 - wireless_ap_test - ERROR - Failed to save debug info: Page.screenshot: Target page, context or browser has been closed
+2025-02-06 11:37:22,594 - wireless_ap_test - INFO - Attempting to navigate to router...
+2025-02-06 11:37:22,594 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/login
+2025-02-06 11:37:24,326 - wireless_ap_test - INFO - Filled username
+2025-02-06 11:37:24,456 - wireless_ap_test - INFO - Filled password
+2025-02-06 11:37:24,617 - wireless_ap_test - INFO - Clicked login button
+2025-02-06 11:37:25,290 - wireless_ap_test - INFO - Login successful - reached overview page
+2025-02-06 11:37:26,802 - wireless_ap_test - WARNING - No spinner detected or timeout: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("[data-testid=\"loading-spinner\"]") to be visible
+
+2025-02-06 11:37:26,803 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/network/wireless/ssids
+2025-02-06 11:37:26,805 - wireless_ap_test - ERROR - Failed to navigate to wireless page: Page.goto: Target page, context or browser has been closed

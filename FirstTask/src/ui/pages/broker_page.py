@@ -5,14 +5,16 @@ from src.utils.logger import setup_logger
 logger = setup_logger()
 
 class BrokerPage(BasePage):
-    def __init__(self, page):
+    def __init__(self, page, device_config):
         super().__init__(page)
+        self.device_config = device_config
 
     async def navigate(self):
         """Navigate to Network → Wireless → SSIDs section"""
         try:
-            await self.page.goto('https://192.168.1.1/services/mqtt/broker')
-            logger.info("Navigating directly to wireless SSIDs page")
+            url = f'https://{self.device_config["device"]["ip"]}/services/mqttt/broker'
+            logger.info(f"Navigating to {url}")
+            await self.page.goto(url)
             
             await self.page.wait_for_selector('[test-id="button-add"]')
             logger.info("Wireless page loaded")

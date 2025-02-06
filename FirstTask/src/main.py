@@ -18,9 +18,9 @@ async def run_test_scenario(page, device_config, scenario_config):
     try:
         
         # Initialize pages
-        login_page = LoginPage(page)
-        data_to_server_page = DTSPage(page)
-        broker_page = BrokerPage(page)
+        login_page = LoginPage(page, device_config)
+        data_to_server_page = DTSPage(page, device_config)
+        broker_page = BrokerPage(page, device_config)
         clean_up = CleanUp(page)
         
         # Login to device
