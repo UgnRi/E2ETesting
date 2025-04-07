@@ -12,7 +12,7 @@ class BrokerPage(BasePage):
     async def navigate(self):
         """Navigate to Network → Wireless → SSIDs section"""
         try:
-            url = f'https://{self.device_config["device"]["ip"]}/services/mqttt/broker'
+            url = f'https://{self.device_config["device"]["ip"]}/services/mqtt/broker'
             logger.info(f"Navigating to {url}")
             await self.page.goto(url)
             

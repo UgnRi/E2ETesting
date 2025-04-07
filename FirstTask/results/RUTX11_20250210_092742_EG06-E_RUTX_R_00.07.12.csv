@@ -1,0 +1,2 @@
+scenario,status,details,timestamp
+basic_data_to_server_setup,FAIL,"Page.screenshot: Target page, context or browser has been closed",2025-02-10 09:28:01

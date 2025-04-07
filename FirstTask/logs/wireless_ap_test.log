@@ -2773,3 +2773,174 @@ Call log:
   - waiting for locator("[test-id=\"button-delete\"]").first to be visible
 
 2025-02-06 09:49:08,083 - wireless_ap_test - INFO - Deleted 1 WiFi interfaces
+2025-02-10 09:27:46,014 - wireless_ap_test - INFO - Attempting to navigate to router...
+2025-02-10 09:27:46,015 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/login
+2025-02-10 09:27:47,751 - wireless_ap_test - INFO - Filled username
+2025-02-10 09:27:47,878 - wireless_ap_test - INFO - Filled password
+2025-02-10 09:27:48,040 - wireless_ap_test - INFO - Clicked login button
+2025-02-10 09:27:48,694 - wireless_ap_test - INFO - Login successful - reached overview page
+2025-02-10 09:27:53,696 - wireless_ap_test - WARNING - No spinner detected or timeout: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"loading-spinner\"]") to be visible
+
+2025-02-10 09:27:53,696 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/services/mqttt/broker
+2025-02-10 09:28:01,197 - wireless_ap_test - ERROR - Failed to navigate to wireless page: Page.wait_for_selector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("[test-id=\"button-add\"]") to be visible
+
+2025-02-10 09:28:17,145 - wireless_ap_test - INFO - Attempting to navigate to router...
+2025-02-10 09:28:17,146 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/login
+2025-02-10 09:28:18,912 - wireless_ap_test - INFO - Filled username
+2025-02-10 09:28:19,038 - wireless_ap_test - INFO - Filled password
+2025-02-10 09:28:19,200 - wireless_ap_test - INFO - Clicked login button
+2025-02-10 09:28:19,836 - wireless_ap_test - INFO - Login successful - reached overview page
+2025-02-10 09:28:24,841 - wireless_ap_test - WARNING - No spinner detected or timeout: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"loading-spinner\"]") to be visible
+
+2025-02-10 09:28:24,841 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/services/mqtt/broker
+2025-02-10 09:28:26,199 - wireless_ap_test - INFO - Wireless page loaded
+2025-02-10 09:28:26,701 - wireless_ap_test - INFO - MQTT Broker already enabled
+2025-02-10 09:28:27,485 - wireless_ap_test - INFO - Anonymous access already enabled
+2025-02-10 09:28:32,667 - wireless_ap_test - WARNING - No spinner detected or timeout: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"loading-spinner\"]") to be visible
+
+2025-02-10 09:28:32,667 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/services/data_sender
+2025-02-10 09:28:33,990 - wireless_ap_test - INFO - Successfully navigated to Data to Server page
+2025-02-10 09:28:33,990 - wireless_ap_test - INFO - Starting to add new DTS instance with name: NewInstance2
+2025-02-10 09:28:33,990 - wireless_ap_test - INFO - Setting instance name
+2025-02-10 09:28:35,300 - wireless_ap_test - INFO - Clicking add button
+2025-02-10 09:28:35,473 - wireless_ap_test - INFO - Successfully clicked last add button (index 0)
+2025-02-10 09:28:35,473 - wireless_ap_test - INFO - Clicking next button
+2025-02-10 09:28:36,653 - wireless_ap_test - INFO - Successfully clicked next button
+2025-02-10 09:28:36,653 - wireless_ap_test - INFO - Setting period: 3
+2025-02-10 09:28:38,180 - wireless_ap_test - INFO - Successfully set period
+2025-02-10 09:28:38,180 - wireless_ap_test - INFO - Clicking next button after period
+2025-02-10 09:28:38,390 - wireless_ap_test - INFO - Successfully clicked next button after period
+2025-02-10 09:28:38,390 - wireless_ap_test - INFO - Setting MQTT plugin
+2025-02-10 09:28:38,546 - wireless_ap_test - INFO - Clicked plugin dropdown
+2025-02-10 09:28:40,889 - wireless_ap_test - INFO - Successfully set MQTT plugin
+2025-02-10 09:28:40,889 - wireless_ap_test - INFO - Setting MQTT server address: test.mosquitto.org
+2025-02-10 09:28:41,390 - wireless_ap_test - INFO - Successfully set server address
+2025-02-10 09:28:41,391 - wireless_ap_test - INFO - Setting MQTT topic: testing
+2025-02-10 09:28:41,637 - wireless_ap_test - INFO - Successfully set MQTT topic
+2025-02-10 09:28:41,637 - wireless_ap_test - INFO - Setting Client ID: 1
+2025-02-10 09:28:41,778 - wireless_ap_test - INFO - Successfully set Client ID
+2025-02-10 09:28:41,948 - wireless_ap_test - INFO - Clicked QoS dropdown
+2025-02-10 09:28:44,191 - wireless_ap_test - INFO - Successfully set QoS
+2025-02-10 09:28:44,191 - wireless_ap_test - INFO - Saving configuration
+2025-02-10 09:28:44,397 - wireless_ap_test - INFO - Successfully clicked save button
+2025-02-10 09:28:44,397 - wireless_ap_test - INFO - Waiting for changes to apply
+2025-02-10 09:28:54,398 - wireless_ap_test - WARNING - No spinner detected or timeout: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"loading-spinner\"]") to be visible
+
+2025-02-10 09:28:54,398 - wireless_ap_test - INFO - Successfully completed adding new DTS instance
+2025-02-10 09:28:55,605 - wireless_ap_test - INFO - Running command: mosquitto_sub -h test.mosquitto.org -p 1883 -t testing -C 1 -W 60
+2025-02-10 09:28:56,293 - wireless_ap_test - INFO - Received message: {"input1":{"time":1739172535,"local_time":"2025-02-10 09:28:55","fw":"RUTX_R_00.07.12","name":"NewInstance2","id":"1"}}
+2025-02-10 09:28:56,293 - wireless_ap_test - INFO - MQTT Broker Enabled Check: mosquitto.mqtt.enabled='1'
+2025-02-10 09:28:56,293 - wireless_ap_test - INFO - MQTT Port Check: mosquitto.mqtt.local_port='1883'
+2025-02-10 09:28:56,293 - wireless_ap_test - INFO - MQTT Anonymous Access Check: mosquitto.mqtt.anonymous_access='1'
+2025-02-10 09:28:56,293 - wireless_ap_test - INFO - MQTT Process Check: 6846 root      4708 S    /usr/sbin/mosquitto -c /tmp/mosquitto.conf
+2025-02-10 09:28:56,293 - wireless_ap_test - INFO - Data to Server Instance Check: data_sender.1.name='NewInstance2'
+2025-02-10 09:28:56,294 - wireless_ap_test - INFO - Data to Server Enabled Check: data_sender.1.enabled='1'
+2025-02-10 09:28:56,294 - wireless_ap_test - INFO - Data to Server Period Check: data_sender.1.period='3'
+2025-02-10 09:28:56,294 - wireless_ap_test - INFO - MQTT Server Check: data_sender.2.mqtt_host='test.mosquitto.org'
+2025-02-10 09:28:56,294 - wireless_ap_test - INFO - MQTT Topic Check: data_sender.2.mqtt_topic='testing'
+2025-02-10 09:28:56,294 - wireless_ap_test - INFO - MQTT Client ID Check: data_sender.2.mqtt_client_id='1'
+2025-02-10 09:28:56,294 - wireless_ap_test - INFO - MQTT QoS Check: data_sender.2.mqtt_qos='1'
+2025-02-10 09:28:56,294 - wireless_ap_test - INFO - Log Errors: 625 Mon Feb 10 08:22:47 2025 daemon.err rms_mqtt[8293]: Failed to connect with authentication keys
+635 Mon Feb 10 08:33:02 2025 daemon.err rms_mqtt[8627]: Failed to connect with authentication keys
+640 Mon Feb 10 08:43:15 2025 daemon.err rms_mqtt[8957]: Failed to connect with authentication keys
+646 Mon Feb 10 08:54:10 2025 daemon.err rms_mqtt[9311]: Failed to connect with authentication keys
+652 Mon Feb 10 09:04:22 2025 daemon.err rms_mqtt[9641]: Failed to connect with authentication keys
+659 Mon Feb 10 09:14:31 2025 daemon.err rms_mqtt[9971]: Failed to connect with authentication keys
+671 Mon Feb 10 09:24:42 2025 daemon.err rms_mqtt[10537]: Failed to connect with authentication keys
+2025-02-10 09:29:22,836 - wireless_ap_test - ERROR - Error deleting interface: Locator.wait_for: Target page, context or browser has been closed
+Call log:
+  - waiting for locator("[test-id=\"button-delete\"]").first to be visible
+
+2025-02-10 09:29:22,836 - wireless_ap_test - INFO - Deleted 1 DTS interfaces
+2025-02-26 10:50:11,198 - wireless_ap_test - INFO - Attempting to navigate to router...
+2025-02-26 10:50:11,198 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/login
+2025-02-26 10:50:12,824 - wireless_ap_test - INFO - Filled username
+2025-02-26 10:50:12,952 - wireless_ap_test - INFO - Filled password
+2025-02-26 10:50:13,209 - wireless_ap_test - INFO - Clicked login button
+2025-02-26 10:50:13,869 - wireless_ap_test - INFO - Login successful - reached overview page
+2025-02-26 10:50:18,872 - wireless_ap_test - WARNING - No spinner detected or timeout: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"loading-spinner\"]") to be visible
+
+2025-02-26 10:50:18,873 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/services/mqtt/broker
+2025-02-26 10:50:20,134 - wireless_ap_test - INFO - Wireless page loaded
+2025-02-26 10:50:20,500 - wireless_ap_test - INFO - MQTT Broker already enabled
+2025-02-26 10:50:21,269 - wireless_ap_test - INFO - Anonymous access already enabled
+2025-02-26 10:50:26,447 - wireless_ap_test - WARNING - No spinner detected or timeout: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"loading-spinner\"]") to be visible
+
+2025-02-26 10:50:26,447 - wireless_ap_test - INFO - Navigating to https://192.168.1.1/services/data_sender
+2025-02-26 10:50:27,685 - wireless_ap_test - INFO - Successfully navigated to Data to Server page
+2025-02-26 10:50:27,685 - wireless_ap_test - INFO - Starting to add new DTS instance with name: NewInstance2
+2025-02-26 10:50:27,685 - wireless_ap_test - INFO - Setting instance name
+2025-02-26 10:50:28,982 - wireless_ap_test - INFO - Clicking add button
+2025-02-26 10:50:29,145 - wireless_ap_test - INFO - Successfully clicked last add button (index 0)
+2025-02-26 10:50:29,145 - wireless_ap_test - INFO - Clicking next button
+2025-02-26 10:50:30,409 - wireless_ap_test - INFO - Successfully clicked next button
+2025-02-26 10:50:30,409 - wireless_ap_test - INFO - Setting period: 3
+2025-02-26 10:50:31,927 - wireless_ap_test - INFO - Successfully set period
+2025-02-26 10:50:31,927 - wireless_ap_test - INFO - Clicking next button after period
+2025-02-26 10:50:32,161 - wireless_ap_test - INFO - Successfully clicked next button after period
+2025-02-26 10:50:32,161 - wireless_ap_test - INFO - Setting MQTT plugin
+2025-02-26 10:50:32,335 - wireless_ap_test - INFO - Clicked plugin dropdown
+2025-02-26 10:50:34,661 - wireless_ap_test - INFO - Successfully set MQTT plugin
+2025-02-26 10:50:34,662 - wireless_ap_test - INFO - Setting MQTT server address: test.mosquitto.org
+2025-02-26 10:50:35,154 - wireless_ap_test - INFO - Successfully set server address
+2025-02-26 10:50:35,154 - wireless_ap_test - INFO - Setting MQTT topic: testing
+2025-02-26 10:50:35,391 - wireless_ap_test - INFO - Successfully set MQTT topic
+2025-02-26 10:50:35,391 - wireless_ap_test - INFO - Setting Client ID: 1
+2025-02-26 10:50:35,529 - wireless_ap_test - INFO - Successfully set Client ID
+2025-02-26 10:50:35,694 - wireless_ap_test - INFO - Clicked QoS dropdown
+2025-02-26 10:50:37,936 - wireless_ap_test - INFO - Successfully set QoS
+2025-02-26 10:50:37,936 - wireless_ap_test - INFO - Saving configuration
+2025-02-26 10:50:38,140 - wireless_ap_test - INFO - Successfully clicked save button
+2025-02-26 10:50:38,140 - wireless_ap_test - INFO - Waiting for changes to apply
+2025-02-26 10:50:48,142 - wireless_ap_test - WARNING - No spinner detected or timeout: Page.wait_for_selector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator("[data-testid=\"loading-spinner\"]") to be visible
+
+2025-02-26 10:50:48,143 - wireless_ap_test - INFO - Successfully completed adding new DTS instance
+2025-02-26 10:50:49,360 - wireless_ap_test - INFO - Running command: mosquitto_sub -h test.mosquitto.org -p 1883 -t testing -C 1 -W 60
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - Received message: {"input1":{"time":1740559851,"local_time":"2025-02-26 08:50:51","fw":"RUTX_R_00.07.12","name":"NewInstance2","id":"1"}}
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - MQTT Broker Enabled Check: mosquitto.mqtt.enabled='1'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - MQTT Port Check: mosquitto.mqtt.local_port='1883'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - MQTT Anonymous Access Check: mosquitto.mqtt.anonymous_access='1'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - MQTT Process Check: 13669 root      4708 S    /usr/sbin/mosquitto -c /tmp/mosquitto.conf
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - Data to Server Instance Check: data_sender.1.name='NewInstance2'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - Data to Server Enabled Check: data_sender.1.enabled='1'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - Data to Server Period Check: data_sender.1.period='3'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - MQTT Server Check: data_sender.2.mqtt_host='test.mosquitto.org'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - MQTT Topic Check: data_sender.2.mqtt_topic='testing'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - MQTT Client ID Check: data_sender.2.mqtt_client_id='1'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - MQTT QoS Check: data_sender.2.mqtt_qos='1'
+2025-02-26 10:50:51,709 - wireless_ap_test - INFO - Log Errors: 1028 Wed Feb 26 08:32:27 2025 daemon.err data_sender: OpenSSL Error[0]: error:05800074:x509 certificate routines::key values mismatch
+1029 Wed Feb 26 08:32:29 2025 daemon.err data_sender: Error: Unable to load client key file "/etc/certificates/ca-file.key.pem".
+1030 Wed Feb 26 08:32:29 2025 daemon.err data_sender: OpenSSL Error[0]: error:05800074:x509 certificate routines::key values mismatch
+1031 Wed Feb 26 08:32:31 2025 daemon.err data_sender: Error: Unable to load client key file "/etc/certificates/ca-file.key.pem".
+1032 Wed Feb 26 08:32:31 2025 daemon.err data_sender: OpenSSL Error[0]: error:05800074:x509 certificate routines::key values mismatch
+1034 Wed Feb 26 08:32:32 2025 daemon.err data_sender: Error: Unable to load client key file "/etc/certificates/ca-file.key.pem".
+1035 Wed Feb 26 08:32:32 2025 daemon.err data_sender: OpenSSL Error[0]: error:05800074:x509 certificate routines::key values mismatch
+1037 Wed Feb 26 08:32:34 2025 daemon.err data_sender: Error: Unable to load client key file "/etc/certificates/ca-file.key.pem".
+1038 Wed Feb 26 08:32:34 2025 daemon.err data_sender: OpenSSL Error[0]: error:05800074:x509 certificate routines::key values mismatch
+1042 Wed Feb 26 08:33:06 2025 daemon.err rms_mqtt[7834]: Failed to connect with authentication keys
+1050 Wed Feb 26 08:34:41 2025 daemon.err data_sender: (test_instance_output) Failed to connect. A TLS error occurred.
+1052 Wed Feb 26 08:35:09 2025 daemon.err rms_mqtt[7834]: Failed to connect with authentication keys
+1055 Wed Feb 26 08:37:10 2025 daemon.err rms_mqtt[7834]: Failed to connect with authentication keys
+1057 Wed Feb 26 08:39:11 2025 daemon.err rms_mqtt[7834]: Failed to connect with authentication keys
+1059 Wed Feb 26 08:41:13 2025 daemon.err rms_mqtt[7834]: Failed to connect with authentication keys
+1063 Wed Feb 26 08:43:14 2025 daemon.err rms_mqtt[7834]: Failed to connect with authentication keys
+1065 Wed Feb 26 08:45:14 2025 daemon.err rms_mqtt[7834]: Failed to connect with authentication keys
+1067 Wed Feb 26 08:47:15 2025 daemon.err rms_mqtt[7834]: Failed to connect with authentication keys
+1070 Wed Feb 26 08:49:15 2025 daemon.err rms_mqtt[7834]: Failed to connect with authentication keys
+1079 Wed Feb 26 08:50:42 2025 daemon.err data_sender: Failed to publish a message
