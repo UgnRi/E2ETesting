@@ -62,7 +62,7 @@ class WirelessValidator:
                 if stderr_str:
                     logger.error(f"MQTT Subscription Errors: {stderr_str}")
                 
-                logger.error("No message received within timeout period")
+                logger.error("No message received within timeout periodtl")
                 return False
             
             except asyncio.TimeoutError:
